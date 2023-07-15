@@ -55,14 +55,14 @@ function Translate1()
 
     return ( 
         <div>
-            <textarea id="input" cols="70" rows="10"></textarea>
+            <textarea id="input" ></textarea>
            {languages && <select id="lang">
                 <option>---select---</option>
                 {languages.map((v)=>{
                                 return (<option> {v.language} </option>)})}
             </select>}
             <button onClick={translate} >Translate</button>
-           <textarea id="output" cols="70" rows="10" value={translatedData}></textarea>
+           <textarea id="output"  value={translatedData}></textarea>
         </div>
       );
 }
