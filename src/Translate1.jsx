@@ -55,7 +55,7 @@ function Translate1()
 
     return ( 
         <div>
-            <textarea id="input" ></textarea>
+            <textarea id="input" placeholder="Type Anything to translate" ></textarea>
            {languages && <select id="lang">
                 <option>---select---</option>
                 {languages.map((v)=>{
